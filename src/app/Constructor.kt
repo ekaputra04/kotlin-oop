@@ -11,4 +11,10 @@ fun main() {
     println("Brand mobil: ${avanza.brand}")
     println("Tahun mobil: ${avanza.year}")
 
+//    secondary constructor
+    val almaz =Car("Almaz")
+    println("Nama mobil: ${almaz.name}")
+    println("Brand mobil: ${almaz.brand}")
+    println("Tahun mobil: ${almaz.year}")
+
 }

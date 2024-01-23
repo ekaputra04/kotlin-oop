@@ -11,4 +11,6 @@ fun main() {
     println(eka.firstName)
     println(eka.middleName)
     println(eka.lastName)
+
+
 }

@@ -1,8 +1,8 @@
 package app
 
+import data.Rectangle
 import data.Shape
 import data.Triangle
-import data.Rectangle
 
 fun main() {
     val shape = Shape()
@@ -10,7 +10,12 @@ fun main() {
 
     val rectangle = Rectangle()
     println("Rectangle corner = ${rectangle.corner}")
+    println("Rectangle parentCorner = ${rectangle.parentCorner}")
 
     val triangle = Triangle()
     println("Triangle corner = ${triangle.corner}")
+    println("Triangle parentCorner = ${triangle.parentCorner}")
+
+//    super pada function
+    rectangle.printName()
 }

@@ -2,12 +2,23 @@ package data
 
 open class Shape {
     open val corner: Int = -1
+
+    open fun printName(){
+        println("This is shape")
+    }
 }
 
 class Rectangle : Shape() {
-    final override val corner: Int = 4
+    override val corner: Int = 4
+    val parentCorner: Int = super.corner
+
+    override fun printName() {
+        println("This is rectangle")
+        super.printName()
+    }
 }
 
 class Triangle : Shape() {
-    final override val corner: Int = 3
+    override val corner: Int = 3
+    val parentCorner: Int = super.corner
 }

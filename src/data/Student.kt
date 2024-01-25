@@ -11,3 +11,6 @@ fun Student?.sayGoodBye(name: String) {
         println("Goodbye, $name, my name is ${this.name}")
     }
 }
+
+val Student.upperName: String
+    get() = this.name.uppercase()

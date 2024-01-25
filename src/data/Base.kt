@@ -16,11 +16,4 @@ class MyBase() : Base {
     }
 }
 
-class MyBaseDelegate(val base: Base) : Base {
-    override fun sayHello(name: String) {
-        base.sayHello(name)
-    }
-    override fun sayGoodBye(name: String) {
-        base.sayGoodBye(name)
-    }
-}
+class MyBaseDelegate(val base: Base) : Base by base

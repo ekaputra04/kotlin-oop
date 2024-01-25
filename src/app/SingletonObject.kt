@@ -12,12 +12,17 @@ fun main() {
 
 //    inner object
     println(Application.Utilities.toUpper("juniawan"))
+
+//    companion object => langsung memanggil member tanpa memanggil object setelah class
+    println(Application.Companion.toLower("JUNIAWAN"))
+    println(Application.toLower("JUNIAWAN"))
+
 }
 
-fun funA(){
+fun funA() {
     println(Utilities.name)
 }
 
-fun funB(){
+fun funB() {
     println(Utilities.name)
 }

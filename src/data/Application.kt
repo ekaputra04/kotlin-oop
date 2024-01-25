@@ -7,4 +7,10 @@ class Application {
             return value.uppercase()
         }
     }
+
+    companion object{
+        fun toLower(value: String): String {
+            return value.lowercase()
+        }
+    }
 }
